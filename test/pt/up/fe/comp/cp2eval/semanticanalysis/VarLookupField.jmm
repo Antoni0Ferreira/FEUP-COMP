@@ -1,0 +1,14 @@
+import c;
+
+class B extends A {
+    int a;
+
+    public int foo(){
+        a = this.test(this);
+        return 0;
+    }
+
+    int test(A h){
+        return 1;
+    }
+}

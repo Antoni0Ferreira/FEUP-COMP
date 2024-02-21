@@ -1,0 +1,20 @@
+import A;
+
+class CallToMethodAssumedInExtends extends A {
+
+    public static void main(String[] args) {
+
+    }
+
+    public int foo() {
+        int b;
+        CallToMethodAssumedInExtends a;
+        a = new CallToMethodAssumedInExtends();
+
+
+        // Assume bar() is in A
+        a.bar(b);
+
+        return 0;
+    }
+}
